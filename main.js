@@ -47,13 +47,21 @@ sections.forEach(s => sectionObs.observe(s));
 /* ─── HERO VIDEO MOUSE PARALLAX ─────────────────────────────────────────── */
 const heroVideo = document.querySelector('.hero-video');
 
-if (heroVideo && !prefersReducedMotion) {
-  document.addEventListener('mousemove', (e) => {
-    if (!nav.classList.contains('on-hero')) return;
-    const x = (e.clientX / window.innerWidth  - 0.5) * 14;
-    const y = (e.clientY / window.innerHeight - 0.5) * 8;
-    heroVideo.style.transform = `scale(1.08) translate(${x}px, ${y}px)`;
-  }, { passive: true });
+if (heroVideo) {
+  // Explicitly call play() — required for autoplay on iOS Safari
+  heroVideo.play().catch(() => {
+    // Autoplay blocked; retry on first touch
+    document.addEventListener('touchstart', () => heroVideo.play(), { once: true, passive: true });
+  });
+
+  if (!prefersReducedMotion) {
+    document.addEventListener('mousemove', (e) => {
+      if (!nav.classList.contains('on-hero')) return;
+      const x = (e.clientX / window.innerWidth  - 0.5) * 14;
+      const y = (e.clientY / window.innerHeight - 0.5) * 8;
+      heroVideo.style.transform = `scale(1.08) translate(${x}px, ${y}px)`;
+    }, { passive: true });
+  }
 }
 
 /* ─── HERO CONTENT SCROLL PARALLAX ─────────────────────────────────────── */
