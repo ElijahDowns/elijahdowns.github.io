@@ -790,6 +790,12 @@ section { padding: var(--pad) 0; }
 .contact-links a:hover { color: var(--text); opacity: 1; }
 
 /* ─── PERSONAL ───────────────────────────────────────────────────────────── */
+.personal-intro {
+  font-size: 1rem;
+  color: rgba(237,233,227,0.55);
+  margin-bottom: 36px;
+}
+
 .personal-hobbies {
   display: flex;
   align-items: baseline;
