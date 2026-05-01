@@ -48,11 +48,13 @@ sections.forEach(s => sectionObs.observe(s));
 const heroVideo = document.querySelector('.hero-video');
 
 if (heroVideo) {
-  // Explicitly call play() — required for autoplay on iOS Safari
-  heroVideo.play().catch(() => {
-    // Autoplay blocked; retry on first touch
-    document.addEventListener('touchstart', () => heroVideo.play(), { once: true, passive: true });
-  });
+  const attemptPlay = () => heroVideo.play().catch(() => {});
+  // canplay fires once enough data is buffered to start
+  heroVideo.addEventListener('canplay', attemptPlay, { once: true });
+  // Fallback: retry on first touch if autoplay is still blocked
+  document.addEventListener('touchstart', attemptPlay, { once: true, passive: true });
+  // Explicitly trigger loading — mobile browsers ignore preload="auto"
+  heroVideo.load();
 
   if (!prefersReducedMotion) {
     document.addEventListener('mousemove', (e) => {
