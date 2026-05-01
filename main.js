@@ -298,3 +298,14 @@ document.querySelectorAll('.course-tags[data-collapsible]').forEach(container =>
 
   container.after(btn);
 });
+
+/* ─── EDUCATION EXTRA TOGGLE ────────────────────────────────────────────── */
+const eduExtra  = document.querySelector('.education-extra');
+const eduToggle = document.querySelector('.education-toggle');
+
+eduToggle?.addEventListener('click', () => {
+  const open = eduToggle.getAttribute('aria-expanded') === 'true';
+  eduExtra.hidden = open;
+  eduToggle.setAttribute('aria-expanded', String(!open));
+  eduToggle.textContent = open ? 'View more' : 'View less';
+});

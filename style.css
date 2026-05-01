@@ -706,6 +706,49 @@ section { padding: var(--pad) 0; }
 }
 .courses-toggle:hover { color: var(--text); border-color: rgba(255,255,255,0.25); }
 
+.grade-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 0;
+  margin-top: 12px;
+}
+
+.grade-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  padding-right: 20px;
+}
+
+.grade-subject { color: rgba(237,233,227,0.65); }
+
+.grade-mark {
+  font-weight: 600;
+  color: rgba(237,233,227,0.9);
+  font-size: 0.85rem;
+}
+
+.education-extra { display: flex; flex-direction: column; gap: 0; }
+
+.education-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--sans);
+  font-size: 0.7rem;
+  color: var(--muted);
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 5px 12px;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: color var(--ease), border-color var(--ease);
+}
+.education-toggle:hover { color: var(--text); border-color: rgba(255,255,255,0.25); }
+
 /* ─── AWARDS ─────────────────────────────────────────────────────────────── */
 .awards-list { display: flex; flex-direction: column; gap: 28px; }
 
