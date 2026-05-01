@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elijah Downs — MSc Bioinformatics</title>
+  <meta name="description" content="Elijah Downs — MSc Bioinformatics student at the University of Edinburgh. Automated bioinformatics pipelines, nucleic acid probe design, computational biology. Available from August 2026. UK Graduate Visa eligible.">
+  <meta name="author" content="Elijah Downs">
+  <meta name="keywords" content="bioinformatics, computational biology, nucleic acid detection, probe design, Python, R, Edinburgh, MSc, data pipelines, machine learning">
+  <link rel="canonical" href="https://elijahdowns.github.io/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Elijah Downs — MSc Bioinformatics">
+  <meta property="og:description" content="Automated bioinformatics pipelines, nucleic acid probe design, computational biology. MSc Bioinformatics, University of Edinburgh. Available from August 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://elijahdowns.github.io/">
+  <meta property="og:site_name" content="Elijah Downs">
+  <meta property="og:image" content="https://elijahdowns.github.io/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- Twitter / X card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Elijah Downs — MSc Bioinformatics">
+  <meta name="twitter:description" content="Automated bioinformatics pipelines, nucleic acid probe design, computational biology. MSc Bioinformatics, University of Edinburgh.">
+  <meta name="twitter:image" content="https://elijahdowns.github.io/assets/og.png">
+
+  <!-- JSON-LD structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Elijah Downs",
+    "url": "https://elijahdowns.github.io",
+    "email": "elijahldowns@gmail.com",
+    "jobTitle": "MSc Bioinformatics Student",
+    "description": "MSc Bioinformatics student at the University of Edinburgh, specialising in automated pipelines for nucleic acid detection and probe design. Previously BSc Nanobiology at TU Delft.",
+    "alumniOf": [
+      { "@type": "CollegeOrUniversity", "name": "University of Edinburgh" },
+      { "@type": "CollegeOrUniversity", "name": "TU Delft" }
+    ],
+    "sameAs": [
+      "https://github.com/ElijahDowns",
+      "https://linkedin.com/in/elijah-downs"
+    ],
+    "knowsAbout": [
+      "Bioinformatics", "Computational Biology", "Nucleic Acid Detection",
+      "Probe Design", "Python", "R", "Data Pipelines", "Machine Learning",
+      "Secondary Structure Prediction", "BLAST", "Genomics"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" aria-label="Home">ED</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-menu" role="list">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#personal">Personal</a></li>
+        <li><a href="assets/Elijah_Downs_CV.pdf" class="nav-cv" download>CV ↓</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" aria-labelledby="hero-name">
+      <video class="hero-video" autoplay muted loop playsinline preload="auto" aria-hidden="true">
+        <source src="assets/DNA.mp4" type="video/mp4">
+      </video>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">MSc Bioinformatics &middot; University of Edinburgh</p>
+        <h1 id="hero-name">Elijah Downs<span class="cursor" aria-hidden="true"></span></h1>
+        <p class="hero-descriptor">Building computational tools for biological problems.</p>
+        <div class="hero-links">
+          <a href="https://github.com/ElijahDowns" target="_blank" rel="noopener noreferrer" class="hero-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+          <a href="https://linkedin.com/in/elijah-downs" target="_blank" rel="noopener noreferrer" class="hero-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            LinkedIn
+          </a>
+          <a href="mailto:elijahldowns@gmail.com" class="hero-link">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+            Email
+          </a>
+          <a href="assets/Elijah_Downs_CV.pdf" class="hero-link hero-link--cv" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            Download CV
+          </a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span>scroll</div>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <h2 id="about-heading" class="section-title">About</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>I am a MSc Bioinformatics student at the University of Edinburgh, coming from a joint BSc in Nanobiology at TU Delft and Erasmus University Rotterdam, where I graduated with a 7.5/10. That degree was genuinely interdisciplinary: biology, physics, chemistry, maths, and computation. That mix has shaped how I approach problems; I tend to move between abstraction levels until something clicks.</p>
+            <p>My MSc industry placement is at CEXAL Ltd, a diagnostics biotech, where I'm building automated bioinformatics pipelines for nucleic acid detection probe design. Sequence parsing, secondary structure prediction, BLAST specificity screening, ranked synthesis-ready outputs. The kind of work where the biology and the software engineering are equally load-bearing.</p>
+            <p>Before that I was doing imaging QC and 3D bioprinting experiments at TU Delft's Shaping Matter Lab, and before that teaching physics and philosophy to 120+ undergraduates. I like problems that sit at the intersection of disciplines, where a borrowed technique from one field becomes genuinely useful in another.</p>
+            <p>I'm interested in diagnostics, scalable molecular detection, data pipelines, and biomanufacturing. Available for roles from August/September 2026. UK Graduate Visa eligible on graduation, so no sponsorship required for UK roles.</p>
+          </div>
+          <aside class="about-meta">
+            <div class="meta-block">
+              <h3>Currently</h3>
+              <p>MSc Bioinformatics<br><span class="muted">University of Edinburgh</span></p>
+              <p>Industry Placement<br><span class="muted">CEXAL Ltd</span></p>
+            </div>
+            <div class="meta-block">
+              <h3>Available</h3>
+              <p>From August / September 2026<br><span class="muted">UK Graduate Visa eligible</span></p>
+            </div>
+            <div class="meta-block">
+              <h3>Interests</h3>
+              <div class="tag-list">
+                <span class="tag">Diagnostics</span>
+                <span class="tag">Molecular Detection</span>
+                <span class="tag">Data Pipelines</span>
+                <span class="tag">Biomanufacturing</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- BIO ANIMATION STRIP -->
+    <div class="bio-strip" aria-hidden="true">
+      <canvas id="bio-canvas"></canvas>
+    </div>
+
+    <!-- PROJECTS -->
+    <section id="projects" aria-labelledby="projects-heading" class="section-alt">
+      <div class="container">
+        <h2 id="projects-heading" class="section-title">Projects</h2>
+        <div class="projects-grid">
+
+          <article class="project-card" aria-labelledby="proj-jahbio">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <h3 id="proj-jahbio">JAHbio</h3>
+                <div class="project-actions">
+                  <a href="http://bioinfmsc8.bio.ed.ac.uk/~s2837201/ICA/" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="JAHbio live site">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                  </a>
+                  <a href="https://github.com/ElijahDowns" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="JAHbio on GitHub (IWD2 repo)">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">Automated protein homology analysis platform. Integrates NCBI Entrez, ClustalOmega, BLASTp, PROSITE motif scanning, and ESMFold 3D structure prediction into an async pipeline with a MySQL backend and live progress polling.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">MySQL</span>
+                <span class="tag">BLASTp</span>
+                <span class="tag">ESMFold</span>
+                <span class="tag">ClustalOmega</span>
+                <span class="tag">NCBI Entrez</span>
+                <span class="tag">PROSITE</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" aria-labelledby="proj-primed">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div>
+                  <h3 id="proj-primed">PRIMED TRY Prediction Pipeline</h3>
+                  <p class="project-award">1st Place &middot; Hackiest Hack &middot; PRIMED Edinburgh Biohackathon 2026</p>
+                </div>
+                <div class="project-actions">
+                  <a href="https://github.com/ElijahDowns/Biohack" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Biohack on GitHub">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">Built in 43 hours. Genome-scale metabolic modelling tool for fungal strain TRY (Titer, Rate, Yield) prediction. Strain detection via NCBI Taxonomy, SBML model generation, in-browser Flux Balance Analysis, Michaelis-Menten kinetics, Snakemake-style orchestration.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">PHP</span>
+                <span class="tag">SQL</span>
+                <span class="tag">SBML</span>
+                <span class="tag">Flux Balance Analysis</span>
+                <span class="tag">NCBI Taxonomy</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" aria-labelledby="proj-cexal">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <h3 id="proj-cexal">CAS Probe Design Pipeline</h3>
+                <span class="project-badge">Industry &middot; NDA</span>
+              </div>
+              <p class="project-desc">Automated bioinformatics framework for nucleic acid detection probe design, built during MSc industry placement at CEXAL Ltd. Sequence parsing, candidate generation, secondary structure prediction (NUPACK, ViennaRNA, mFold), BLAST specificity screening, ranked synthesis-ready outputs.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">BLAST</span>
+                <span class="tag">NUPACK</span>
+                <span class="tag">ViennaRNA</span>
+                <span class="tag">mFold</span>
+                <span class="tag">Biopython</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" aria-labelledby="proj-thesis">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <div>
+                  <h3 id="proj-thesis">Lab Grown Wood</h3>
+                  <p class="project-award">BSc Thesis &middot; TU Delft &middot; Thesis grade: 8.5/10</p>
+                </div>
+              </div>
+              <p class="project-desc">Investigated the feasibility of lab-grown wood through 3D printing of plant cells, evaluating growth, viability, and structural fidelity over time. Combined biological experimentation with additive manufacturing to assess how printing parameters and growth conditions affect cell survival, proliferation, and shape retention. Manuscript in preparation.</p>
+              <div class="project-tags">
+                <span class="tag">3D Bioprinting</span>
+                <span class="tag">Plant Cell Culture</span>
+                <span class="tag">Materials Science</span>
+                <span class="tag">Biofabrication</span>
+                <span class="tag">ImageJ</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" aria-labelledby="proj-bme">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <h3 id="proj-bme">Bio-Inspired Breast Pump Flange Insert</h3>
+              </div>
+              <p class="project-award" style="margin-bottom:12px">BME Minor Design Project &middot; TU Delft &middot; 2025 &middot; in consultation with Reinier de Graaf Hospital</p>
+              <p class="project-desc">Designed and prototyped a biologically accurate breast pump flange insert in a team of five. Developed a tongue-inspired compression mechanism applying positive pressure to mimic infant suckling, bellows actuators for peripheral breast compression, a ribbed surface for massage, and an adjustable geometry accommodating a wider nipple size range. Prototyped in SolidWorks using TPU and biomedical-grade elastic resin.</p>
+              <div class="project-tags">
+                <span class="tag">SolidWorks</span>
+                <span class="tag">CAD Design</span>
+                <span class="tag">Prototyping</span>
+                <span class="tag">Biomedical Engineering</span>
+                <span class="tag">R&amp;D</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" aria-labelledby="proj-maths">
+            <div class="project-card-inner">
+              <div class="project-header">
+                <h3 id="proj-maths">Advanced Maths Simulations</h3>
+                <div class="project-actions">
+                  <a href="https://github.com/ElijahDowns/Advanced-Maths-Topics-Simulations" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Advanced Maths Simulations on GitHub">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">Jupyter notebooks analysing numerical methods and error analysis: finite differences, root-finding, integration schemes, and convergence behaviour. Built to develop intuition for the computational side of applied mathematics.</p>
+              <div class="project-tags">
+                <span class="tag">Python</span>
+                <span class="tag">Jupyter</span>
+                <span class="tag">NumPy</span>
+                <span class="tag">Numerical Methods</span>
+                <span class="tag">Error Analysis</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="container">
+        <h2 id="skills-heading" class="section-title">Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="skill-items">
+              <span class="skill-item">Python</span>
+              <span class="skill-item">R</span>
+              <span class="skill-item">SQL</span>
+              <span class="skill-item">Unix / Bash</span>
+              <span class="skill-item">JavaScript</span>
+              <span class="skill-item">PHP</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Bioinformatics</h3>
+            <div class="skill-items">
+              <span class="skill-item">BLAST</span>
+              <span class="skill-item">ClustalOmega</span>
+              <span class="skill-item">HMMER</span>
+              <span class="skill-item">NCBI APIs</span>
+              <span class="skill-item">NUPACK</span>
+              <span class="skill-item">ViennaRNA</span>
+              <span class="skill-item">mFold</span>
+              <span class="skill-item">ESMFold</span>
+              <span class="skill-item">Biopython</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Data &amp; Pipelines</h3>
+            <div class="skill-items">
+              <span class="skill-item">Pipeline design</span>
+              <span class="skill-item">MySQL</span>
+              <span class="skill-item">Async orchestration</span>
+              <span class="skill-item">Data QC</span>
+              <span class="skill-item">Statistical analysis</span>
+              <span class="skill-item">ImageJ</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Computational</h3>
+            <div class="skill-items">
+              <span class="skill-item">Applied ML</span>
+              <span class="skill-item">Monte Carlo simulation</span>
+              <span class="skill-item">Regression</span>
+              <span class="skill-item">Numerical methods</span>
+              <span class="skill-item">Flux Balance Analysis</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <h3>Laboratory</h3>
+            <div class="skill-items">
+              <span class="skill-item">Quantitative assays</span>
+              <span class="skill-item">Aseptic technique</span>
+              <span class="skill-item">Confocal microscopy</span>
+              <span class="skill-item">3D bioprinting</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <h3>Soft Skills</h3>
+            <div class="skill-items">
+              <span class="skill-item">Cross-disciplinary thinking</span>
+              <span class="skill-item">Scientific communication</span>
+              <span class="skill-item">Teaching</span>
+              <span class="skill-item">Independent research</span>
+              <span class="skill-item">Project ownership</span>
+              <span class="skill-item">Collaboration</span>
+              <span class="skill-item">Technical writing</span>
+              <span class="skill-item">Adaptability</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARTICLE STRIP -->
+    <div class="particle-strip" aria-hidden="true">
+      <canvas id="particle-canvas"></canvas>
+    </div>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" aria-labelledby="experience-heading" class="section-alt">
+      <div class="container">
+        <h2 id="experience-heading" class="section-title">Experience</h2>
+        <ol class="timeline" role="list">
+
+          <li class="timeline-item">
+            <div class="timeline-track" aria-hidden="true">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-body">
+              <time class="timeline-date" datetime="2026-05">May &ndash; Jul 2026</time>
+              <h3>MSc Industry Placement</h3>
+              <p class="timeline-org">CEXAL Ltd</p>
+              <p>Automated bioinformatics pipeline for CAS probe design. Sequence parsing, secondary structure prediction, specificity screening, and ranked output generation. Details NDA-limited.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-track" aria-hidden="true">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-body">
+              <time class="timeline-date" datetime="2025-02">Feb &ndash; Jul 2025</time>
+              <h3>Lab Intern</h3>
+              <p class="timeline-org">Shaping Matter Lab, TU Delft</p>
+              <p>Quantitative imaging and QC, aseptic cell culture, confocal microscopy, 3D bioprinting experiments. Bachelor thesis completed here (thesis grade: 8.5/10).</p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-track" aria-hidden="true">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-body">
+              <time class="timeline-date" datetime="2024-11">Nov 2024 &ndash; Feb 2025</time>
+              <h3>Undergraduate Teaching Assistant</h3>
+              <p class="timeline-org">TU Delft</p>
+              <p>Teaching assistant for Physics (NB1140) and Philosophy &amp; Ethics (NB2022). Supported 120+ undergraduate students across both courses.</p>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-track" aria-hidden="true">
+              <div class="timeline-dot"></div>
+              <div class="timeline-line"></div>
+            </div>
+            <div class="timeline-body">
+              <time class="timeline-date" datetime="2023-08">Aug 2023 &ndash; Oct 2024</time>
+              <h3>Promotion Team Member</h3>
+              <p class="timeline-org">TU Delft</p>
+              <p>Represented TU Delft at outreach and promotional events for prospective students.</p>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" aria-labelledby="education-heading">
+      <div class="container">
+        <h2 id="education-heading" class="section-title">Education</h2>
+        <div class="education-list">
+
+          <div class="education-item">
+            <div class="education-header">
+              <div>
+                <h3>MSc Bioinformatics</h3>
+                <p class="education-inst">University of Edinburgh</p>
+              </div>
+              <time class="education-date" datetime="2025">2025 &ndash; 2026</time>
+            </div>
+            <p class="courses-label">Key modules</p>
+            <div class="course-tags">
+              <span class="tag">Next Generation Genomics</span>
+              <span class="tag">Comparative &amp; Evolutionary Genomics</span>
+              <span class="tag">Applied Machine Learning</span>
+              <span class="tag">Bioinformatics Algorithms</span>
+              <span class="tag">Bioinformatics Programming &amp; System Management</span>
+              <span class="tag">Statistics &amp; Data Analysis</span>
+              <span class="tag">Website &amp; Database Design</span>
+              <span class="tag">Technology Entrepreneurship &amp; Commercialisation</span>
+            </div>
+          </div>
+
+          <div class="education-item">
+            <div class="education-header">
+              <div>
+                <h3>BSc Nanobiology (Joint Degree)</h3>
+                <p class="education-inst">TU Delft &amp; Erasmus University Rotterdam</p>
+              </div>
+              <div class="education-header-right">
+                <time class="education-date" datetime="2022">2022 &ndash; 2025</time>
+                <span class="education-grade">Grade: 7.5/10</span>
+              </div>
+            </div>
+            <p class="education-desc">Interdisciplinary degree spanning biology, physics, chemistry, mathematics, and computation. Joint programme between TU Delft and Erasmus University Rotterdam.</p>
+            <p class="courses-label">Courses</p>
+            <div class="course-tags" data-collapsible>
+              <span class="tag">Advanced Math Topics</span>
+              <span class="tag">Analysis 1</span>
+              <span class="tag">Analysis 2</span>
+              <span class="tag">Analysis 3</span>
+              <span class="tag">Biochemistry</span>
+              <span class="tag">Biomechanics: Anatomy and Control</span>
+              <span class="tag">Biomolecular Programming</span>
+              <span class="tag">Biomolecular Structure and Function</span>
+              <span class="tag">Biophysics</span>
+              <span class="tag">Chemistry 1</span>
+              <span class="tag">Chemistry 2</span>
+              <span class="tag">Computational Neuroscience</span>
+              <span class="tag">Computational Science</span>
+              <span class="tag">Differential Equations</span>
+              <span class="tag">Electronic Instrumentation</span>
+              <span class="tag">Evolutionary Developmental Biology</span>
+              <span class="tag">General Introduction to Biomedical Engineering</span>
+              <span class="tag">High Speed Scientific Computing</span>
+              <span class="tag">Image Analysis</span>
+              <span class="tag">Lab Course Track A-1</span>
+              <span class="tag">Lab Course Track A-2</span>
+              <span class="tag">Linear Algebra</span>
+              <span class="tag">Medical Imaging</span>
+              <span class="tag">Microscopy &amp; Nanoscopy Practice</span>
+              <span class="tag">Molecular Biology</span>
+              <span class="tag">Molecular Genetics</span>
+              <span class="tag">Nanotechnology</span>
+              <span class="tag">Optics and Microscopy</span>
+              <span class="tag">Orthopedic Biomaterials</span>
+              <span class="tag">Philosophy and Ethics</span>
+              <span class="tag">Physical Biology of the Cell 1</span>
+              <span class="tag">Physical Biology of the Cell 2</span>
+              <span class="tag">Physics 1A</span>
+              <span class="tag">Physics 1B</span>
+              <span class="tag">Physics 2</span>
+              <span class="tag">Quantum Mechanics 1</span>
+              <span class="tag">Statistical Physics</span>
+              <span class="tag">Statistics</span>
+              <span class="tag">Systems and Signals</span>
+              <span class="tag">Thermodynamics and Transport</span>
+              <span class="tag">BME Minor Projects</span>
+              <span class="tag">Bachelor Thesis Project</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards" aria-labelledby="awards-heading" class="section-alt">
+      <div class="container">
+        <h2 id="awards-heading" class="section-title">Awards &amp; Certifications</h2>
+        <ul class="awards-list" role="list">
+          <li class="award-item">
+            <div class="award-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div class="award-content">
+              <h3>1st Place, "Hackiest Hack"</h3>
+              <p class="award-meta">PRIMED Edinburgh Biohackathon &middot; March 2026 &middot; Hackathons UK</p>
+              <p>Awarded for the TRY Prediction Pipeline, a genome-scale metabolic modelling tool for fungal strain optimisation built in 43 hours.</p>
+            </div>
+          </li>
+          <li class="award-item">
+            <div class="award-icon" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+            </div>
+            <div class="award-content">
+              <h3>Duke of Edinburgh Gold Award</h3>
+              <p class="award-meta">September 2022</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="container contact-inner">
+        <h2 id="contact-heading" class="section-title">Get in touch</h2>
+        <p class="contact-desc">Available for roles from August / September 2026. UK Graduate Visa eligible on graduation, so no sponsorship required for UK roles.</p>
+        <a href="mailto:elijahldowns@gmail.com" class="contact-email">elijahldowns@gmail.com</a>
+        <nav class="contact-links" aria-label="Contact links">
+          <a href="https://github.com/ElijahDowns" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://linkedin.com/in/elijah-downs" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="assets/Elijah_Downs_CV.pdf" download>Download CV</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- PERSONAL -->
+    <section id="personal" aria-labelledby="personal-heading" class="section-alt">
+      <div class="container">
+        <h2 id="personal-heading" class="section-title">Personal</h2>
+
+        <div class="personal-hobbies">
+          <span class="personal-subheading">Hobbies</span>
+          <ul class="hobby-list" role="list">
+            <li>Long distance running</li>
+            <li>Cricket</li>
+            <li>Rowing</li>
+            <li>Hiking</li>
+            <li>Gaming</li>
+          </ul>
+        </div>
+
+        <div class="media-strips">
+
+          <div class="media-strip">
+            <span class="media-strip-label">TV Shows</span>
+            <ol class="media-strip-items" role="list">
+              <li><a href="https://en.wikipedia.org/wiki/Succession_(TV_series)" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Succession — Wikipedia"><span class="game-rank">#1</span><img src="assets/TV/succession.jpg" alt="Succession" class="game-img" loading="lazy"><span class="game-title">Succession</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Better_Call_Saul" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Better Call Saul — Wikipedia"><span class="game-rank">#2</span><img src="assets/TV/better_call_saul.jpg" alt="Better Call Saul" class="game-img" loading="lazy"><span class="game-title">Better Call Saul</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Normal_People_(TV_series)" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Normal People — Wikipedia"><span class="game-rank">#3</span><img src="assets/TV/normal_people.jpg" alt="Normal People" class="game-img" loading="lazy"><span class="game-title">Normal People</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Barry_(TV_series)" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Barry — Wikipedia"><span class="game-rank">#4</span><img src="assets/TV/barry.webp" alt="Barry" class="game-img" loading="lazy"><span class="game-title">Barry</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Curb_Your_Enthusiasm" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Curb Your Enthusiasm — Wikipedia"><span class="game-rank">#5</span><img src="assets/TV/curb.jpg" alt="Curb Your Enthusiasm" class="game-img" loading="lazy"><span class="game-title">Curb Your Enthusiasm</span></a></li>
+            </ol>
+          </div>
+
+          <div class="media-strip">
+            <span class="media-strip-label">Movies</span>
+            <ol class="media-strip-items" role="list">
+              <li><a href="https://en.wikipedia.org/wiki/Good_Will_Hunting" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Good Will Hunting — Wikipedia"><span class="game-rank">#1</span><img src="assets/Movies/good_will_hunting.jpg" alt="Good Will Hunting" class="game-img" loading="lazy"><span class="game-title">Good Will Hunting</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Dune:_Part_Two" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Dune: Part Two — Wikipedia"><span class="game-rank">#2</span><img src="assets/Movies/dune_2.jpeg" alt="Dune: Part Two" class="game-img" loading="lazy"><span class="game-title">Dune: Part Two</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Everything_Everywhere_All_at_Once" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Everything Everywhere All at Once — Wikipedia"><span class="game-rank">#3</span><img src="assets/Movies/Everything_Everywhere_All_at_Once.jpg" alt="Everything Everywhere All at Once" class="game-img" loading="lazy"><span class="game-title">Everything Everywhere All at Once</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Spider-Man_3" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Spider-Man 3 — Wikipedia"><span class="game-rank">#4</span><img src="assets/Movies/spiderman3.jpg" alt="Spider-Man 3" class="game-img" loading="lazy"><span class="game-title">Spider-Man 3</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Austin_Powers:_International_Man_of_Mystery" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Austin Powers — Wikipedia"><span class="game-rank">#5</span><img src="assets/Movies/austin_powers.jpg" alt="Austin Powers" class="game-img" loading="lazy"><span class="game-title">Austin Powers</span></a></li>
+            </ol>
+          </div>
+
+          <div class="media-strip">
+            <span class="media-strip-label">Games</span>
+            <ol class="media-strip-items" role="list">
+              <li><a href="https://en.wikipedia.org/wiki/Baldur%27s_Gate_3" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Baldur's Gate 3 — Wikipedia"><span class="game-rank">#1</span><img src="assets/videogames/BG3.jpg" alt="Baldur's Gate 3" class="game-img" loading="lazy"><span class="game-title">Baldur's Gate 3</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/God_of_War_(2018_video_game)" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="God of War 2018 — Wikipedia"><span class="game-rank">#2</span><img src="assets/videogames/GoW.jpg" alt="God of War (2018)" class="game-img" loading="lazy"><span class="game-title">God of War</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Sekiro:_Shadows_Die_Twice" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Sekiro: Shadows Die Twice — Wikipedia"><span class="game-rank">#3</span><img src="assets/videogames/sekiro.jpg" alt="Sekiro: Shadows Die Twice" class="game-img" loading="lazy"><span class="game-title">Sekiro</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Dark_Souls_III" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Dark Souls III — Wikipedia"><span class="game-rank">#4</span><img src="assets/videogames/Dark_souls.avif" alt="Dark Souls III" class="game-img" loading="lazy"><span class="game-title">Dark Souls III</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Spider-Man:_Web_of_Shadows" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Spider-Man: Web of Shadows — Wikipedia"><span class="game-rank">#5</span><img src="assets/videogames/Spiderman.jpg" alt="Spider-Man: Web of Shadows" class="game-img" loading="lazy"><span class="game-title">Spider-Man: Web of Shadows</span></a></li>
+            </ol>
+          </div>
+
+          <div class="media-strip">
+            <span class="media-strip-label">Albums</span>
+            <ol class="media-strip-items" role="list">
+              <li><a href="https://en.wikipedia.org/wiki/Take_Care_(album)" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Take Care — Wikipedia"><span class="game-rank">#1</span><img src="assets/Music/Take_Care_Drake.jpg" alt="Take Care — Drake" class="game-img game-img--square" loading="lazy"><span class="game-title">Take Care</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Flower_Boy" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Flower Boy — Wikipedia"><span class="game-rank">#2</span><img src="assets/Music/Flower_Boy_Tyler_The_Creator.png" alt="Flower Boy — Tyler, The Creator" class="game-img game-img--square" loading="lazy"><span class="game-title">Flower Boy</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Acid_Rap" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Acid Rap — Wikipedia"><span class="game-rank">#3</span><img src="assets/Music/Acid_Rap.jpg" alt="Acid Rap — Chance the Rapper" class="game-img game-img--square" loading="lazy"><span class="game-title">Acid Rap</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Blonde_(Frank_Ocean_album)" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Blonde — Wikipedia"><span class="game-rank">#4</span><img src="assets/Music/blonde_Frank_Ocean.jpeg" alt="Blonde — Frank Ocean" class="game-img game-img--square" loading="lazy"><span class="game-title">Blonde</span></a></li>
+              <li><a href="https://en.wikipedia.org/wiki/Aaron_May_(rapper)" target="_blank" rel="noopener noreferrer" class="game-card" aria-label="Chase — Aaron May — Wikipedia"><span class="game-rank">#5</span><img src="assets/Music/Chase_Aaron_May.jpeg" alt="Chase — Aaron May" class="game-img game-img--square" loading="lazy"><span class="game-title">Chase</span></a></li>
+            </ol>
+          </div>
+
+        </div><!-- end .media-strips -->
+      </div>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">Elijah Downs &middot; Edinburgh, 2026</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
