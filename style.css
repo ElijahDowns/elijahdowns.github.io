@@ -730,7 +730,8 @@ section { padding: var(--pad) 0; }
   font-size: 0.85rem;
 }
 
-.education-extra { display: flex; flex-direction: column; gap: 0; }
+.education-extra { display: contents; }
+.education-extra[hidden] { display: none; }
 
 .education-toggle {
   display: inline-flex;
