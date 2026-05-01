@@ -48,12 +48,15 @@ sections.forEach(s => sectionObs.observe(s));
 const heroVideo = document.querySelector('.hero-video');
 
 if (heroVideo) {
-  const attemptPlay = () => heroVideo.play().catch(() => {});
-  // canplay fires once enough data is buffered to start
-  heroVideo.addEventListener('canplay', attemptPlay, { once: true });
-  // Fallback: retry on first touch if autoplay is still blocked
+  const attemptPlay = () => { if (heroVideo.paused) heroVideo.play().catch(() => {}); };
+  // Try on multiple readiness events — mobile browsers vary on which fires
+  ['loadedmetadata', 'loadeddata', 'canplay'].forEach(e => {
+    heroVideo.addEventListener(e, attemptPlay, { once: true });
+  });
+  // Also trigger on first scroll or touch — both count as user interaction on mobile
+  window.addEventListener('scroll',     attemptPlay, { once: true, passive: true });
   document.addEventListener('touchstart', attemptPlay, { once: true, passive: true });
-  // Explicitly trigger loading — mobile browsers ignore preload="auto"
+  // Explicitly start loading — mobile browsers skip preload="auto" to save data
   heroVideo.load();
 
   if (!prefersReducedMotion) {
