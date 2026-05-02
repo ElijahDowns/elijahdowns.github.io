@@ -1088,6 +1088,9 @@ footer {
     gap: 10px;
   }
   .personal-hobbies .personal-subheading { margin-bottom: 0; }
+
+  .hobby-list { flex-direction: column; gap: 6px; }
+  .hobby-list li + li::before { display: none; }
 }
 
 @media (max-width: 400px) {
