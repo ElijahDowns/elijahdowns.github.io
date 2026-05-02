@@ -1081,6 +1081,13 @@ footer {
 
   .award-item { gap: 14px; }
   .award-icon { width: 36px; height: 36px; }
+
+  .personal-hobbies {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .personal-hobbies .personal-subheading { margin-bottom: 0; }
 }
 
 @media (max-width: 400px) {
